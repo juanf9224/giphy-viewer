@@ -3,7 +3,7 @@
 In this app you will be able to navigate through a handfull of gifs provided by the giphy api, you will be able to search in the searchbox, as you type, you'll notice that the posts are gonna be filtering live!
 
 Home:
-![Home](https://storage.googleapis.com/posts-navigator-290609.appspot.com/assets/gif/app-overview.gif)
+![Home](./src/assets/images/home.png)
 
 ## Available Scripts
 
