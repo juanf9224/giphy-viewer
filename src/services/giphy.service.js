@@ -9,12 +9,14 @@ export const searchGifs = async (searchTerm) => {
     `${url}?q=${searchTerm}&limit=20&api_key=S73QCJIaQC5IBjhEEhu29ZDRaErRpnT3`,
     {
       method: 'GET',
-    }
+    }    
   );
 
-  if (result.status > 400) {
-    return console.error('Error fetching gifs');
+  const resWrapper = await result.json();
+
+  if (result.status > 400) {   
+    throw new Error(resWrapper);
   } else {
-    return result.json();
+    return resWrapper.data;
   }
 };
