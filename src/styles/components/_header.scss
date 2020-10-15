@@ -1,0 +1,18 @@
+.header {
+  position: relative;
+  background: $primary;
+  padding: $s-size;
+  height: $xl-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__title {
+  color: $off-white;
+  text-decoration: none;
+
+  h1 {
+    margin: 0;
+  }
+}
