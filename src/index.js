@@ -8,11 +8,13 @@ import store from './store/configureStore';
 import { ThemeProvider } from '@material-ui/styles';
 
 import theme from './theme';
-import GiphyDashboard  from './components/GiphyDashboard';
+import GiphyDashboard from './components/GiphyDashboard';
+import Header from './components/Header';
 
 const app = (
   <ThemeProvider theme={theme}>
     <Provider store={store}>
+      <Header />
       <GiphyDashboard />
     </Provider>
   </ThemeProvider>
